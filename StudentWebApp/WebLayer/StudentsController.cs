@@ -36,10 +36,10 @@ namespace StudentWebApp.WebLayer
 
         [HttpPut]
         [Consumes("application/json")]
-
-    public StudentDetailsDTO UpdateStudent([FromBody] StudentUpdatedDTO studentUpdateDTO)
+        [Route("{id}")]
+        public StudentDetailsDTO UpdateStudent([FromRoute] int studentid, [FromBody] string lastname)
         {
-           return studentService.UpdateStudent(studentUpdateDTO);
+           return studentService.UpdateStudent(studentid, lastname);
         }
 
     }

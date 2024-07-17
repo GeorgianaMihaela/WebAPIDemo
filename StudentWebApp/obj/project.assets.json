@@ -7878,11 +7878,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\genitu\\source\\repos\\StudentWebApp\\StudentWebApp\\StudentWebApp.csproj",
+      "projectUniqueName": "C:\\GEO_PERSONAL\\DEV_ACADEMY\\WebAPIDemo\\StudentWebApp\\StudentWebApp.csproj",
       "projectName": "StudentWebApp",
-      "projectPath": "C:\\Users\\genitu\\source\\repos\\StudentWebApp\\StudentWebApp\\StudentWebApp.csproj",
+      "projectPath": "C:\\GEO_PERSONAL\\DEV_ACADEMY\\WebAPIDemo\\StudentWebApp\\StudentWebApp.csproj",
       "packagesPath": "C:\\Users\\genitu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\genitu\\source\\repos\\StudentWebApp\\StudentWebApp\\obj\\",
+      "outputPath": "C:\\GEO_PERSONAL\\DEV_ACADEMY\\WebAPIDemo\\StudentWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\genitu\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -34,7 +34,7 @@ namespace StudentWebApp.ServiceLayer
             return studentDetailsDTOs;
         }
 
-        public StudentDetailsDTO UpdateStudent(StudentUpdatedDTO studentUpdateDTO)
+        public StudentDetailsDTO UpdateStudent(int studentid, string lastname)
         {
             //Student foundStudent = _mapper.Convert(studentUpdateDTO);
             //Student updatedStudent = _context.UpdateStudent(foundStudent);
@@ -44,12 +44,12 @@ namespace StudentWebApp.ServiceLayer
             //convert stundet saved in db to dto
             //return dto
 
-            Student? foundStudent = _context.Students.FirstOrDefault(s => s.ID == studentUpdateDTO.StudentId);
+            Student? foundStudent = _context.Students.FirstOrDefault(s => s.ID == studentid);
             if (foundStudent == null) {
                 throw new Exception("Student not found"); 
             }
 
-            foundStudent.LastName = studentUpdateDTO.LastName;
+            foundStudent.LastName = lastname; 
             //foundStudent.EnrollmentDate = new DateTime(studentUpdateDTO.EnrollmentDate);
 
             Student savedStudent = _context.UpdateStudent(foundStudent);

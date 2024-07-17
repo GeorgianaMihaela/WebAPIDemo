@@ -7,6 +7,6 @@ namespace StudentWebApp.ServiceLayer
 
         void CreateStudent(StudentDTO studentDTO);
         List<StudentDetailsDTO> GetAllStudents();
-        StudentDetailsDTO UpdateStudent(StudentUpdatedDTO studentUpdateDTO);
+        StudentDetailsDTO UpdateStudent(int studentid, string lastname);
     }
 }
